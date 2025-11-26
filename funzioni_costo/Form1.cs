@@ -31,9 +31,14 @@ namespace funzioni_costo
         private void btnProc_Click(object sender, EventArgs e)
         {
             // calcolo punto di equilibrio
+            
+            if (!int.TryParse(textBoxChartPrecision.Text, out int precision)) { MessageBox.Show("inserire un numero"); return; }
+            if (chart.Series.IndexOf("Domanda") != -1) chart.Series.Remove(chart.Series["Domanda"]);
+            if (chart.Series.IndexOf("Offerta") != -1) chart.Series.Remove(chart.Series["Offerta"]);
+
+            double maxsp = (double)1 / (double)Math.Pow(2, precision);
             double q = 0;
             double diffsp = 1;
-            double maxsp = (double)1 / (double)65536; //precisione 1/2^16
             double qResult = 0;
             while (diffsp >= maxsp)
             {
@@ -45,11 +50,11 @@ namespace funzioni_costo
                 }
                 q = q + diffsp;
             }
-            labelPuntoEffic.Text = $"Quantità di equilibrio: q = {qResult}, d = {d(qResult)}, o = {o(qResult)} -- precisione 1/2^16";
+            labelPuntoEffic.Text = $"Quantità di equilibrio: q = {qResult}, d = {d(qResult)}, o = {o(qResult)}";
 
             //
-            int precision = int.Parse(textBoxChartPrecision.Text);
-            maxsp = (double)1 / (double)Math.Pow(2, precision);
+            
+            
             q = 0;
             double qStop = 30;
             chart.Series.Add("Domanda");
