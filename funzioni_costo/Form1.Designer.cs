@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.btnProc = new System.Windows.Forms.Button();
             this.listboxsp = new System.Windows.Forms.ListBox();
             this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -69,31 +68,27 @@
             // listboxsp
             // 
             this.listboxsp.FormattingEnabled = true;
-            this.listboxsp.Location = new System.Drawing.Point(433, 156);
+            this.listboxsp.Location = new System.Drawing.Point(44, 154);
             this.listboxsp.Name = "listboxsp";
             this.listboxsp.Size = new System.Drawing.Size(591, 316);
             this.listboxsp.TabIndex = 20;
             // 
             // chart
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart.Legends.Add(legend3);
-            this.chart.Location = new System.Drawing.Point(44, 149);
+            chartArea2.Name = "ChartArea1";
+            this.chart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart.Legends.Add(legend2);
+            this.chart.Location = new System.Drawing.Point(641, 30);
             this.chart.Name = "chart";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart.Series.Add(series3);
-            this.chart.Size = new System.Drawing.Size(383, 350);
+            this.chart.Size = new System.Drawing.Size(471, 440);
             this.chart.TabIndex = 21;
             this.chart.Text = "chart1";
             // 
             // labelPuntoEffic
             // 
             this.labelPuntoEffic.AutoSize = true;
-            this.labelPuntoEffic.Location = new System.Drawing.Point(447, 486);
+            this.labelPuntoEffic.Location = new System.Drawing.Point(638, 473);
             this.labelPuntoEffic.Name = "labelPuntoEffic";
             this.labelPuntoEffic.Size = new System.Drawing.Size(0, 13);
             this.labelPuntoEffic.TabIndex = 22;
@@ -147,6 +142,7 @@
             this.input_dq2.Name = "input_dq2";
             this.input_dq2.Size = new System.Drawing.Size(26, 20);
             this.input_dq2.TabIndex = 31;
+            this.input_dq2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // input_dq1
             // 
@@ -154,6 +150,7 @@
             this.input_dq1.Name = "input_dq1";
             this.input_dq1.Size = new System.Drawing.Size(26, 20);
             this.input_dq1.TabIndex = 32;
+            this.input_dq1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // input_dq0
             // 
@@ -161,6 +158,7 @@
             this.input_dq0.Name = "input_dq0";
             this.input_dq0.Size = new System.Drawing.Size(26, 20);
             this.input_dq0.TabIndex = 33;
+            this.input_dq0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // input_do0
             // 
@@ -168,6 +166,7 @@
             this.input_do0.Name = "input_do0";
             this.input_do0.Size = new System.Drawing.Size(26, 20);
             this.input_do0.TabIndex = 39;
+            this.input_do0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // input_do1
             // 
@@ -175,6 +174,7 @@
             this.input_do1.Name = "input_do1";
             this.input_do1.Size = new System.Drawing.Size(26, 20);
             this.input_do1.TabIndex = 38;
+            this.input_do1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // input_do2
             // 
@@ -182,6 +182,7 @@
             this.input_do2.Name = "input_do2";
             this.input_do2.Size = new System.Drawing.Size(26, 20);
             this.input_do2.TabIndex = 37;
+            this.input_do2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label4
             // 
@@ -217,6 +218,7 @@
             this.input_oq3.Name = "input_oq3";
             this.input_oq3.Size = new System.Drawing.Size(26, 20);
             this.input_oq3.TabIndex = 43;
+            this.input_oq3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label8
             // 
@@ -233,6 +235,7 @@
             this.input_dq3.Name = "input_dq3";
             this.input_dq3.Size = new System.Drawing.Size(26, 20);
             this.input_dq3.TabIndex = 41;
+            this.input_dq3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label9
             // 
@@ -247,7 +250,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 539);
+            this.ClientSize = new System.Drawing.Size(1187, 527);
             this.Controls.Add(this.input_oq3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.input_dq3);

@@ -86,10 +86,12 @@ namespace funzioni_costo
             q = 0;
             double qStop = 30;
             chart.Series.Add("Domanda");
+            chart.Series["Domanda"].MarkerSize = 2;
             chart.Series["Domanda"].Color = Color.Brown;
             chart.Series["Domanda"].ChartType = SeriesChartType.Point;
 
             chart.Series.Add("Offerta");
+            chart.Series["Offerta"].MarkerSize = 2;
             chart.Series["Offerta"].Color = Color.Orange;
             chart.Series["Offerta"].ChartType = SeriesChartType.Point;
             while (q <= qStop)
